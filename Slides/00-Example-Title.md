@@ -1,15 +1,17 @@
 
 # Example
-## A slide subtitle
+### A slide subtitle
+
+`Hello world!`
 
 -subslide
 
 ### Title for the first subslide
 
-Slide content
+Automatically updates when files are added, deleted or modified.
 
 -subslide
 
 ### Title for the last subslide
 
-Slide content
+© Joey Smalen
