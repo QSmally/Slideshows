@@ -19,8 +19,11 @@ Template for the index may be modified at `I-Notify/Template.html`. Server can b
 $ docker compose up [--build --remove-orphans]
 ```
 
+After doing so, the presentation may be viewable at `localhost:8000`.
+
 ## Notes
 
 * Slides are sorted by their name, so a `00-` prefix convention may be necessary;
 * Each Markdown file is a major slide with their subslides included. See `reveal.js`;
+* A `-subslide` line is used as subslide delimiter (a verticle slide);
 * Container `autoindex` is necessary to automatically generate a file index on start/update.
