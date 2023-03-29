@@ -5,7 +5,6 @@
 * Add new files to regenerate the index;
 * See these changes without restarting the Docker container.
 
--subslide
 
 ## Presentations
 

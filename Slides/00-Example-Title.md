@@ -4,7 +4,6 @@
 
 `Hello world!`
 
--subslide
 
 ### Seamless experience
 

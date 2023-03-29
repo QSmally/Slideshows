@@ -2,4 +2,4 @@
 ## Markdown
 
 * A second **major** slide;
-* Markdown is *nice*.
+* Minor slides with *two* blank lines.
