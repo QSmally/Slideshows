@@ -25,5 +25,5 @@ After doing so, the presentation may be viewable at `localhost:8000`.
 
 * Slides are sorted by their name, so a `00-` prefix convention may be necessary;
 * Each Markdown file is a major slide with their subslides included. See `reveal.js`;
-* A `-subslide` line is used as subslide delimiter (a verticle slide);
+* Two blank lines are used as subslide delimiter (a verticle slide);
 * Container `autoindex` is necessary to automatically generate a file index on start/update.

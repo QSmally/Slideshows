@@ -17,7 +17,7 @@ fi
 
 TEMPLATE_SLIDES=$(ls -1 "$2" | \
     sort | \
-    sed 's/\(.*\)/<section data-markdown="\/Slides\/\1" data-separator-vertical="^-subslide"><\/section>/')
+    sed 's/\(.*\)/<section data-markdown="\/Slides\/\1" data-separator-vertical="^\\r?\\n\\r?\\n" data-separator-notes="^Note:"><\/section>/')
 
 while read line; do
     echo $line | grep -q "<!--TEMPLATE-CONTENT-->"
