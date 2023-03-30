@@ -7,6 +7,8 @@ generate() {
 
 generate
 
-while inotifywait /watch -e create -e delete; do
-    generate
-done
+inotifywait /watch -e create -e delete -mq --format '%:e %f' |
+    while read -r MESSAGE; do
+        echo $MESSAGE
+        [[ $MESSAGE == *.md ]] && generate
+    done
