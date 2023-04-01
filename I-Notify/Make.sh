@@ -1,5 +1,12 @@
 #!/bin/bash
 
+#
+# © 2023 Joey Smalen ("Smally", "QSmally")
+#
+# Command usage:
+#   Make.sh
+#
+
 generate() {
     /tools/Generate.sh /tools/Template.html /watch > output.html
     echo "Generated new file index based on $(ls /watch | wc -l) files"
