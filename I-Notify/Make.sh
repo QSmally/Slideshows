@@ -6,9 +6,14 @@
 # Command usage:
 #   Make.sh
 #
+# Files:
+#   /watch
+#   /input.html
+#   /output.html
+#
 
 generate() {
-    /tools/Generate.sh /tools/Template.html /watch > output.html
+    /tools/Generate.sh /input.html /watch > /output.html
     echo "Generated new file index based on $(ls /watch | wc -l) files"
 }
 

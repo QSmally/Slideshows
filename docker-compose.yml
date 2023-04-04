@@ -12,17 +12,18 @@ services:
       - 8000:8000
     volumes:
       - "./Slides:/Presentation/Slides:rw"
-      - "./Shared/index.html:/Presentation/index.html:ro"
+      - "./Shared/Generated-Index.html:/Presentation/index.html:ro"
 
   # autoindex
-  #   Populates the 'index.html' volume at boot, and when the '/watch' volume
+  #   Populates the 'output.html' volume at boot, and when the '/watch' volume
   #   sent create or delete events from the filesystem. It generates an output
-  #   based on 'Template.html'.
+  #   based on 'input.html'.
   autoindex:
     build: ./I-Notify
     container_name: autoindex
     volumes:
       - "./Slides:/watch:ro"
       - "./I-Notify:/tools:ro"
-      - "./Shared/index.html:/output.html:rw"
+      - "./Shared/Template.html:/input.html:ro"
+      - "./Shared/Generated-Index.html:/output.html:rw"
     entrypoint: /tools/Make.sh
