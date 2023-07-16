@@ -1,7 +1,7 @@
 
-# Presentation service
+# Slideshow service
 
-Automatically updated Markdown presentations.
+Automatically updated Markdown presentations. Superseded by [Presentations](https://github.com/QSmally/Presentations).
 
 Incorporating [Reveal.js](https://github.com/hakimel/reveal.js) to automatically generate a file
 index from Markdown slides provided in `Slides/`. Slides are attached like a volume so any changes
